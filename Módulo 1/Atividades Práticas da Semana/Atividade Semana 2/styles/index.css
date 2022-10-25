@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+#card1 { 
+    display: inline-block;
+    background-color: var(--cor2);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 30px 0px 30px 30px;
+    color: white;
+    line-height: 2em;
+    width: 480px;
+    height: 270px;
+    border-right: 30px;
+}
+
+#card2 {
+    display: inline-block;
+}
+
+#card2 img {
+    border-radius: 35px;
+    padding: 0px 15px 0px 15px;
+    width: 480px;
+    height: 330px;
+    margin-top: 20px;
+}
+
+.linha1 {
+    font-family: var(--fonte1);
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.linha2 {
+    font-family: var(--fonte2);
+    font-weight: bolder;
+    color: var(--cor4);
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.linha3 {
+    color: #7d99c7;
+    font-size: 40px;
+    font-weight: normal;
+    padding-bottom: 20px;
+    font-family: var(--fonte1);
+}
+
+.linha4 {
+    font-family: var(--fonte2);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 20px;
+    margin: 5px 0px;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+#texto{
+    width: 1280px;
+    padding: 30px 128px 10px 128px;
+    font-family: var(--fonte2);
+    font-size: 1.4em;
+}
+
+#texto a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+#texto b {
+    font-size: 1.3em;
+}
+
+#texto th {
+    padding: 20px 0px 20px 0px;
+    text-align: left;
+    vertical-align: middle;
+    width: 150px;
+}
+
+#texto td {
+    width: 800px;
+    white-space: pre-wrap;
+    color: var(--cor2);
+    text-align: justify;
+}

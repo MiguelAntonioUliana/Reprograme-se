@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.habilidade p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+.habilidade h1 {
+    padding-bottom: 20px;
+}
+
+.habilidade {
+    width: 1280px;
+    padding: 10px 128px 10px 128px;
+    font-size: 1.4em;
+}
+
+.habilidade td {
+    padding: 10px 50px 10px 0px;
+}
+
+.experiencia {
+    width: 1280px;
+    padding: 0px 128px 10px 128px;
+    font-size: 1.4em;
+}
+
+.experiencia td {
+    padding: 10px 30px 10px 0px;
+}
+
+.experiencia th {
+    width: 300px;
+    text-align: left;
+}
+
+progress {
+    width: 250px;
+    height: 35px;
+}

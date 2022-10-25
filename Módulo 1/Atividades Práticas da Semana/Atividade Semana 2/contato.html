@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/headAndFooter.css">
+    <link rel="stylesheet" href="styles/contato.css">
+    <title>Contato</title>
+</head>
+
+<body>
+
+    <table class="cabecalho" id="topo">
+        <thead>
+            <tr>
+                <td rowspan="2"><img src="img/face.jpg" alt="Rosto"></td>
+                <th><h1>Miguel Antonio Uliana</h1></th>
+            </tr>
+            <tr>
+                <td>&lt;Designer e Desenvolvedor Web&gt;</td>
+            </tr>
+        </thead>
+    </table>
+
+
+    <table id="cards">
+
+        <tr class="menu">
+            <td colspan="2">
+                <a href="index.html">Principal</a>
+                <a href="quemsou.html">Quem Sou</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="#topo" id="marcado">Contato</a>
+            </td>
+        </tr>
+
+    </table>
+
+    <table class="formulario">
+        <tr>
+            <td>
+                <h1>Entre em contato!</h1>
+                <p>Preencha todos os campos do formulário a seguir e em até 48h lhe responderei.</p>
+                <p>Será um prazer lhe atender!</p><br>
+                <p>
+                <form action="/dadosCliente">
+                    <p>
+                        <label for="slctAssunto">Assunto</label><br>
+                        <select name="Assunto" id="slctAssunto">
+                            <option value="nulo" disabled selected>Selecione o assunto</option>
+                            <option value="Selecione o assunto">Pagamentos</option>
+                            <option value="Selecione o assunto">Orçamento</option>
+                            <option value="Selecione o assunto">Reclamações</option>
+                            <option value="Outro Assunto">Outro Assunto</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="txtNome">Nome</label><br>
+                        <input type="text" name="nome" id="txtNome" placeholder="Beltrano de tal">
+
+                    </p>
+
+                    <p>
+                        <label for="txtEmail">E-mail</label><br>
+                        <input type="email" name="Email" id="txtEmail" placeholder="beltrano@email.com">
+                    </p>
+
+                    <p>
+                        <label for="numberTelefone">Telefone</label><br>
+                        <input type="tel" name="telefone" id="numberTelefone" placeholder="(27) 99999-9999"
+                            maxlength="15">
+                    </p>
+
+                    <p>
+                        <label for="txtMensagem">Mensagem</label><br>
+                        <textarea name="mensagem" id="txtMensagem" cols="50" rows="10"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Enviar">
+                    </p>
+
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <hr>
+                <h3>Outras formas de contato:</h3>
+
+                <ul>
+                    <li>
+                        Residente em Vila Velha
+                    </li>
+                    <li>
+                        <a href="mailto:contato@email.com" target="_blank">contato@email.com</a>
+                    </li>
+                    <li>
+                        (27) 99999-9999
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/miguel-antonio-uliana-235102252/"
+                            target="_blank">Linkedin</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+
+    <table>
+        <tfoot>
+            <tr>
+                <td>
+                    <p>Copyright &copy; 2022</p><br>
+                    <p><img src="img/ifes.png" alt="Logo Ifes" width="80px"></p>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

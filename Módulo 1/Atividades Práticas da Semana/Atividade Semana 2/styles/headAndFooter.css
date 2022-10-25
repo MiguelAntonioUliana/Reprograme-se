@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap');
+
+:root {
+    --fonte1: 'Caveat', cursive;
+    --fonte2: 'Open Sans', sans-serif;
+    --fonte3: 'Courier New';
+
+    --cor1: #EFE2BB;
+    --cor2: #333333;
+    --cor3: #4055A1;
+    --cor4: #D99823;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* --> Para visualizar as tabelas só descomentar abaixo <-- */
+
+/*
+table, td, th {
+    border: 1px solid red;
+}
+*/
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte2);
+    width: 1280px;
+    margin: auto;
+}
+
+#cabecalho {
+    width: 1280px;
+}
+
+thead img {
+    border-radius: 50px;
+    width: 80px;
+}
+
+thead {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+    border-spacing: 10px;
+    color: white;
+    display: inline-block;
+    width: 1150px;
+    padding: 50px 0px 50px 128px;
+}
+
+thead h1 {
+    font-size: 36px;
+    width: 500px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+thead td {
+    padding-left: 20px;
+    font-family: var(--fonte3);
+    font-size: 1.5em;
+}
+
+thead img {
+    border-radius: 50px;
+    width: 80px;
+}
+
+#cards {
+    width: 1024px;
+    padding: 30px 0px 0px 128px;
+}
+
+.menu {
+    color: white;
+    display: inline-block;
+    width: 1024px;
+    padding: 0px 128px 20px 0px;
+}
+
+.menu a {
+    padding: 5px 77px 5px 77px;
+    margin: 0px 5px;
+    text-decoration: none;
+    font-family: var(--fonte1);
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#marcado {
+    background-color: var(--cor2);
+    border-radius: 10px;
+    color: white;
+}
+
+.menu a:hover {
+    background-color: var(--cor3);
+    border: 10px 60px;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+tfoot td {
+    width: 1280px;
+    padding: 15px 0px;
+    font-family: var(--fonte2);
+    background-color: white;
+    text-align: center;
+    font-weight: bolder;
+    border-top: 1px solid rgba(54, 52, 52, 0.397);
+}
