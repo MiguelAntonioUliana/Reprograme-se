@@ -1,0 +1,27 @@
+body {
+    background: url(bg.webp);
+    height: 3000px;
+}
+
+#div1, #div2 {
+    width: 500px;
+    height: 700px;
+}
+
+#div1 {
+    background-color: blue;
+
+}
+
+#div2 {
+    background-color: green;
+}
+
+#div3 {
+    background-color: rgb(223, 255, 40);
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    bottom: 30px;
+    top: 30px;
+}

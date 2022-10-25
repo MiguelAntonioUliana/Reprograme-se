@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+}
+
+#titulo {
+    width: 80%;
+    padding: 50px;
+    text-align: center;
+}
+
+#formulario-busca {
+    width: 20%;
+}
+
+#menu {
+    width: 30%;
+}
+
+#texto {
+    width: 70%;
+    padding: 20px;
+}
+
+tfoot td {
+    padding: 50px;
+    text-align: center;
+}
+
+span {
+    color: red;
+}
+
+input[type=text] + input[type=submit] {
+    color: blueviolet;
+}
+

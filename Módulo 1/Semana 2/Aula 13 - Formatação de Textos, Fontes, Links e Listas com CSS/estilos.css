@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap&family=Sofia&display=swap');
+
+/*Para importar mais de uma fonte 
+family=NomeDaFont&display=swap
+*/
+
+body, a{
+    color: gray;
+}
+
+h1 {
+    font: normal small-caps normal 30px/60px "Sofia";
+    text-align: center;
+    /*
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Sofia', sans-serif;
+    */
+    /*Fontes Sans-serif são fontes adequadas para ser ler em telas*/
+    
+    font-style: normal;
+    font-weight: bolder;
+    font-variant: small-caps;
+    
+    /*Fonte variante permite variar em caixa alta a fonte*/   
+}
+
+p {
+    text-align: justify;
+    text-decoration: underline wavy;
+    text-transform: capitalize;
+    text-indent: 3rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    word-spacing: 5px;
+    white-space: normal;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+a:active {
+    color: purple;
+}
+
+a {
+    border: solid 1px black;
+    padding: 5px;
+    background-color: purple;
+    border-radius: 1px;
+}
+
+ul {
+    list-style-image: url("Inserir caminho da imagem aqui");
+    list-style-type: upper-alpha;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    line-height: 2.1em;
+}

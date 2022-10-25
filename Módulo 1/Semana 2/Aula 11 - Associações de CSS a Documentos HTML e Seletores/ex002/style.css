@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    font-size: 1.2em;
+}
+
+h1 {
+    color: #1f4b4b;
+}
+
+.detacado {
+    font-weight: bolder;
+}
+
+#txtNome {
+    color: red;
+}
+
+p, h2.textoSimples {
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(211, 13, 168);
+}
+
+p i {
+    color: blueviolet;
+}
+
+P > strong {
+    color: crimson;
+}

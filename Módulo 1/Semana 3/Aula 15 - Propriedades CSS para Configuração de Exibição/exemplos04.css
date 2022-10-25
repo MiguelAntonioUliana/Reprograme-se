@@ -1,0 +1,12 @@
+div {
+    border: solid 5px black;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+}
+
+#div2 {
+    visibility: hidden;
+}
+
+/*Hidden = Escondida -> O espaço fica reservado*/

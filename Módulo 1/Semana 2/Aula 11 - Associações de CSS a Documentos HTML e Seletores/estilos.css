@@ -1,0 +1,69 @@
+@charset "UTF-8"; 
+
+    /*Seletores por tipo*/
+
+    h1 {
+        color: blue;
+    }
+
+    i {
+        color: red;
+    }
+
+    ul {
+        background-color: rgb(22, 93, 173);
+    }
+
+    p {
+        color: orange;
+    }
+
+    /*Seletor por classe*/
+
+    .vermelho {
+        color: red;
+    }
+
+    /*Agrupamento de seletores, podem abrigar seletores de qualquer tipo*/
+
+    /*Seletor por ID*/
+
+    #p2, a, h1 {
+        font-size: 24px;
+        color: blue;
+    }
+
+    /*Ordem de hierarquia: ID > Class > Seletor por tipo*/
+
+    /* --> * <-- Seletor Universal*/
+
+    * {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /*Todo elemento I que estiver dentro de um seletor H1 deve ter cor amarela*/
+
+    /*Descedência*/
+
+    h1 i {
+        color: yellow;
+    }
+
+    /*Pai e filho --> Esse prevalece*/
+
+    h1 > i {
+        color: green;
+    }
+
+    /*Seletor por vizinhaça ---> Todos os elementos p vizinhos posteriores de ul são atingidos*/
+
+    ul ~ p {
+        text-decoration: underline;
+    }
+
+    /*Seletor irmão ---> Atinge somente os elementos colados abaixo*/
+
+    ul + p {
+        text-decoration: none;
+    }
+

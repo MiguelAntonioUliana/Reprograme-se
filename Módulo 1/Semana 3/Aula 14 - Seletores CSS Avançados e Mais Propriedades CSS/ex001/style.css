@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+input {
+    border-radius: 3px;
+    border: solid 1px gray;
+}
+
+p::after {
+    content: " *";
+}
+
+#p1::first-letter {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+ol > li::marker {
+    content: none;
+}
+
+a[href^=http]:hover {
+    background-color: aqua;
+}
+
+a[href$=xlsx]:hover {
+    background-color: yellow;
+}
+
+form {
+    text-align: left;
+    display: inline-block;
+}
+
+form > div {
+    margin: 10px 0;
+}
+
+form input {
+    display: block;
+}
+
+form label {
+    display: block;
+    margin: 5px 0px;
+}
+
+input[type=checkbox] {
+    display: inline;
+}
+
+input[type=checkbox]:checked + label {
+    background-color: aqua;
+}
+
+fieldset > input {
+    display: inline-block;
+} 
+
+input[type=radio]:checked + label {
+    background-color: red;
+}
+
+input + label {
+    display: inline;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+    outline: 3px solid red;
+}
+
+input[type=number]:out-of-range {
+    background-color: red;
+} 
+
+input[type=number]:in-range {
+    background-color: aqua;
+}
+
+table {
+    border-collapse: collapse;
+    display: inline-block;
+    margin: 20px 0px;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px black;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(114, 50, 50);
+}

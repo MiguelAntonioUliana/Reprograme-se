@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop NEKO</title>
+</head>
+
+<body>
+
+    <h1 align="center">PetShop NEKO</h1>
+    <hr>
+
+    <p>Bem vindo ao PetShop NEKO, para solicitar um orçamento preencha os dados corretamente.</p>
+
+    <!--Em dúvida aqui-->
+    <form method="post" action="/contato/cotar" >
+        <p>
+            <label for="txtNomeDoDono">Nome do Dono</label><br>
+            <input type="text" name="NomedoDono" id="txtNomeDoDono" placeholder="Digite seu nome aqui">
+        </p>
+
+        <p>
+            <label for="slctTipoDeAnimal">Tipo de animal</label><br>
+            <select name="TipoDeAnimal" id="slctTipoDeAnimal">
+                <option value="Cachorro">Cachorro</option>
+                <option value="Coelho">Coelho</option>
+                <option value="Gato">Gato</option>
+                <option value="Passaro">Passáro</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="txtTipoDeServico">Tipo de serviço</label><br>
+            <input type="text" name="NomedoDono" id="txtTipoDeServico" placeholder="Digite o tipo de tipo de servico aqui">
+        </p>
+
+        <p>
+            <label for="txtObservacoes">Observações</label><br>
+            <textarea name="Observacoes" id="txtObservacoes" cols="30" rows="10"></textarea>
+        </p>
+
+        <input type="submit" value="Enviar" >
+
+    </form>
+
+
+
+</body>
+
+</html>

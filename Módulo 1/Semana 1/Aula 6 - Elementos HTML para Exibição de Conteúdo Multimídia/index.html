@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Multimídia</title>
+</head>
+
+<body>
+    <h1>Conteúdo Multimídia</h1>
+    <hr>
+    <video controls width="800" height="600" muted poster="popeye_for_president.jpg">
+        <source src="PopeyeforPresident.mp4" type="video/mp4">
+        <source src="PopeyeforPresident.webm" type="video/webm">
+        <source src="PopeyeforPresident.ogv" type="video/ogg">
+        <track kind="captions" srclang="en-us" src="PopeyeforPresident.en-us.vtt" label="Closed Captions">
+        <track kind="subtitles" srclang="pt-br" src="PopeyeforPresident.pt-br.vtt" label="Legendas PT-BR" default>
+        <track kind="subtitles" srclang="es" src="PopeyeforPresident.es.vtt" label="Legendas ES">
+        Seu navegador não suporta vídeos HTML5.
+    </video>
+    <!--controls: Insere controle no vídeo
+    autoplay: inicia o vídeo automaticamente
+    muted: vídeo mutado-->
+    <!--Track: Legenda 
+    Kind: Tipo de legenda
+    src: Arquivo
+    Label: Nome que vai aparecer no reprodutor
+    srclang: Idioma do arquivo
+    default: Legenda padrão
+    Label = Etiqueta
+    Poster = Thumbnail do vídeo-->
+
+</body>
+
+</html>

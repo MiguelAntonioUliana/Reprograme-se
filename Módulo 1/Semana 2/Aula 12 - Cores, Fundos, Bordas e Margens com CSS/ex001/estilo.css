@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #AD64FB;
+    --cor2: #8619FA;
+    --cor4: #54317A;
+    --cor3: #6A14C7;
+    --cor5: #410C7A;
+    --cor6: #410c7a46;
+}
+
+body {
+    background-color: var(--cor1);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(img/45-degree-fabric-light.png);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cor4);
+}
+
+p {
+    color: var(--cor3);
+}
+
+a {
+    color: var(--cor5);
+    text-decoration: none;
+}
+
+header, footer {
+    background-color: var(--cor6);
+    padding: 10px;
+    text-align: center;
+    border-width: 3px 0px;
+    border-color: var(--cor5);
+    border-style: solid;
+}
+
+main {
+    padding: 10px;
+}

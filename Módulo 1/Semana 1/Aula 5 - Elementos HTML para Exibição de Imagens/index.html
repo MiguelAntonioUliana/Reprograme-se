@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+ 
+
+    <h1>Imagens</h1>
+    <hr>
+    <a href="lua.html">
+        <img src="img/moon.png" alt="Lua" width="200">
+    </a> <!--Adicionando um link clicável a imagem-->
+
+    <a href="terra.html">
+        <img src="img/world.png" alt="terra" width="200">
+    </a>
+    <a href="sol.html">
+        <img src="img/sun.png" alt="Sol" width="200">
+    </a>
+
+    <!--Endereço relativo-->
+    <img src="https://www.mapasmundi.com.br/blog/wp-content/uploads/2015/07/mapa_brasil_100X100_regioes_2.png" alt="Mapa do Brasil">
+    <!--Endereço absoluto-->
+
+    <img src="https://www.inexistentman.net/wp-content/uploads/2013/08/banana.gif" alt="Banana Dançando">
+
+    <!--Dica de site - Flaticon-->
+
+    <hr>
+    <img src="img/moon.png" alt="Lua" width="200">
+    <img src="img/moon.svg" alt="Lua" width="200">
+
+    <!--SVG é um formato vetorial muito vantajoso, não é bom para fotos-->
+
+    <hr>
+
+    <h1>Áreas clicáveis</h1>
+
+    <img src="img/formas.png" alt="Formas" usemap="#formas">
+    <map name="formas">
+        <area shape="circle" coords="71,74,68" href="circulo.html" alt="Circulo">
+        <area shape="rect" coords="177,139,314,2" href="quadrado.html" alt="Quadrado">
+        <area shape="rect" coords="352, 114, 526, 28" href="retangulo.html" alt="Retângulo">
+        <area shape="poly" coords="567, 132, 627, 10, 688, 132" href="triangulo.html" alt="Triângulo">
+    </map>
+
+    <!--coords= x, y, raio. usemap= Para indicar a figura qual o map a ser usado-->
+    <!--coords rect= x, canto inferior esquerdo e quanto superior direito.-->
+    <!--coord poly= vértices do poligono-->
+
+    <hr>
+
+    <img src="https://www.mapasmundi.com.br/blog/wp-content/uploads/2015/07/mapa_brasil_100X100_regioes_2.png" alt="Mapa do Brasil" alt="Mapa do Brasil" usemap="#brasil">
+
+    <map name="brasil">
+        <area target="_blank" alt="Espírito Santo" title="Espírito Santo" href="es.html"
+            coords="640,540,645,530,656,518,661,502,663,489,670,482,681,482,684,490,685,503,683,518,675,530,665,544,657,553,645,547"
+            shape="poly">
+        <area target="_blank" alt="Rio de Janeiro" title="Rio de Janeiro" href="rj.html"
+            coords="584,572,597,565,611,564,627,558,635,549,642,540,649,548,657,549,654,567,637,578,636,587,620,587,604,588,590,590,583,593"
+            shape="poly">
+    </map>
+
+    <!--Site Imagem Map Generator: https://www.image-map.net/-->
+
+    <!--Shift + alt + F = Formata o código-->
+
+    <picture>
+        
+    </picture>
+
+
+
+
+
+</body>
+</html>

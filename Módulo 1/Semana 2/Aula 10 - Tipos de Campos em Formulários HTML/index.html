@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Inputs</title>
+</head>
+
+<body>
+
+    <h1>Tipos de Input</h1>
+
+    <p>
+        <!--O atributo action indica para onde o formulário está sendo enviado-->
+
+        <!--O atributo radio e checkbox precisam de um value e ID-->
+
+        <!--cursor: pointer;-->
+
+    <form>
+        Selecione os tópicos que mais lhe agradam
+        <p>
+        <input type="checkbox" name="Noticias" value="C" required> Notícias<br>
+        <input type="checkbox" name="Promocoes" value="S"> Promoções<br>
+        <input type="checkbox" name="Alertas" value="O"> Alertas<br>
+        </p>
+
+        Estado Civil 
+        <p></p>
+        <input type="radio" name="EstadoCivil" value="C" required> Casado<br>
+        <input type="radio" name="EstadoCivil" value="S"> Solteiro<br>
+        <input type="radio" name="EstadoCivil" value="O"> Outro<br>
+        </p>
+
+
+        <p>
+        <label for="password">Digite sua senha</label> 
+        <br> <br>
+        <input type="password" name="senha" id="password"> <br> 
+        </p>
+
+        Digite o número do seu telefone:
+        <p>
+            <input type="text" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required placeholder="(99) 99999-9999"> <br>
+        </p>
+
+        Digite o seu nome
+        <p>
+            <input type="text" name="campo2" id="campo2" maxlength="50" required autocomplete="off" autofocus list="minhalista" placeholder="Digite aqui o seu nome"> <br>
+
+            <datalist id="minhalista">
+                <option value="Miguel"></option>
+                <option value="Carlos"></option>
+                <option value="Irineu"></option>
+            </datalist>
+        </p>
+
+        Digite novamente seu nome
+        <p>
+            <input type="text" name="campo1" id="campo1" maxlength="50" required autofocus autocomplete="off"> <br> 
+        </p>
+        
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <input type="button" value="Enviar" onclick="this.form.submit();">
+        </p>
+
+        Escolha a cor
+        <p>
+            <input type="color"> <br>
+        </p>
+
+        Escolha uma data
+        <p>
+            <input type="date" min="1900-07-01" max="2022-10-30"> <br>
+        </p>
+        
+        <!-- Lembrando que no min e max é ANO-MÊS-DIA e em datetime-local é preciso colocar a hora-->
+        <!--Erro aqui-->
+
+        Escolha a data com um horário específico
+        <p>
+            <input type="datetime-local" min="1900-07-01T00:00:00" max="2022-10-30T05:00:00"> <br>
+        </p>
+
+        Insira seu email
+        <p>
+            <input type="email"> <br>
+        </p>
+
+        Adicione um arquivo no formato .pdf ou .doc
+        <p>
+            <input type="file"> <br>
+        </p>
+
+        <!--hidden serve para armazenar informações que vem predefinidas do servidor-->
+
+        <input type="hidden" name="id" value="451">
+
+        Insira o mês de nascimento
+        <p> 
+            <input type="month" name="mesNascimento" min="2020-12" max="2023-05"> <br>
+        </p>
+
+        Digite um número de 100 a 1000
+        <p>
+            <input type="number" name="valor" min="100" max="1000" step="50"> <br>
+        </p>
+
+        Escolha o seletor de 0 a 100
+        <p>
+            <input type="range" min="0" max="100" step="1"> <br>
+        </p>
+
+        Campo de pesquisa
+        <p>
+            <input type="search" name="termo"> <br>
+        </p>
+
+        Digite o número do seu telefone
+        <p>
+            <input type="tel" name="telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"> <br>
+        </p>
+
+        <p>
+            <label for="time">Digite a hora atual</label> 
+            <br> <br>
+            <input type="time" name="horaMarcada" min="00:00:00" max="18:00:00" name="time" id="time"><br>
+        </p>
+
+        Digite o endereço de um site
+        <p>
+            <input type="url" name="enderecoSite" placeholder="www.google.com"><br>
+        </p>
+
+        Digite a semana correspondente
+        <p>
+            <input type="week" name="semanaCongresso" min="2021-W18" max="2022-W50">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar"> 
+        </p>
+
+    </form>
+    </p>
+
+</body>
+
+</html>

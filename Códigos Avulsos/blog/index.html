@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão sobre tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td id="titulo">Blog da Monitoria</td>
+            <td id="formulario-busca">
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="O que você procura...">
+                            </td>
+                            <td>
+                                <input type="submit" value="Pesquisar">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td id="menu">
+                    <table border="1">
+                        <tr>
+                            <td colspan="2">
+                                Post exemplo 01
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Post exemplo 02
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Post exemplo 03
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Post exemplo 04
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Post exemplo 05
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Post exemplo 05
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Post exemplo 06
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ver recentes
+                            </td>
+                            <td>
+                                Ver antigas
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, velit nemo omnis aspernatur culpa
+                    rerum, perspiciatis quibusdam tempora minus obcaecati pariatur facilis. Quasi assumenda autem
+                    delectus tempora quo laboriosam optio tenetur culpa consectetur eos vel unde obcaecati consequatur
+                    blanditiis odio iure reprehenderit ducimus, nisi quisquam? Voluptas eaque esse ipsum totam? Hic,
+                    modi ab. Quasi animi provident voluptates deserunt aperiam quidem veritatis, quo ut atque vitae
+                    tempora dolorem si
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1" align="center" id="formulario-contato">
+
+        <tr>
+            <form action="">
+
+                <td>
+                    <h2>Seja um parceiro</h2>
+                    <label for="txtNome">Nome<span>*</span></label>
+                    <input type="text" name="nome" id="textNome" placeholder="Fulano de tal" required><br>
+                    <label for="txtEmail">Email<span>*</span></label>
+                    <input type="email" name="email" id="txtEmail" placeholder="email@email.com" required><br>
+                    <label for="numberTelefone">Telefone<span>*</span></label>
+                    <input type="tel" name="nome" id="numberTelefone" placeholder="(99) 99999-9999" maxlength="15"
+                        required pattern="[(]{1}[0-9]{2}[)]{1} [0-9]{5}[-]{1}[0-9]{4}"><br>
+                    <label for="dateNascimento">Data de Nascimento</label>
+                    <input type="date" name="data" id="dateNascimento"><br>
+                    <label for="txtLeitura">O que você gosta de ler?</label><br>
+                    <textarea name="Leitura" id="txtLeitura" cols="30" rows="10"></textarea><br>
+                    <label for="numberMoney">Doe um money</label>
+                    <input type="number" name="Money" id="numberMoney" min="0" placeholder="R$ 0,00"><br>
+                </td>
+
+
+                <td>
+                    <label for="slctEstado">Estado</label><br>
+                    <select name="Estado" id="slctEstado">
+                        <option disabled selected>Selecione...</option>
+                        <!--Esse é um comentário em HTML-->
+                        <option value="RJ">RJ</option>
+                        <option value="SP">SP</option>
+                        <option value="ES">ES</option>
+                        <option value="MG">MG</option>
+                    </select><br>
+                    <label for="fotoArquivo">Envie uma foto de perfil</label><br>
+                    <input type="file" name="Foto" id="fotoArquivo"
+                        onchange="document.getElementById('fotoUsuario').src = window.URL.createObjectURL(this.files[0])">
+                    <br>
+                    <img src="" alt="Primeiro selecione uma foto" width="300px" id="fotoUsuario">
+                    <br>
+                    <input type="submit" value="Enviar">
+                </td>
+
+            </form>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    Rodapé
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <script>
+        const inputDate = document.querySelector("#dateNascimento");
+        inputDate.max = new Date().toISOString().split('T')[0];
+    </script>
+
+</body>
+
+</html>

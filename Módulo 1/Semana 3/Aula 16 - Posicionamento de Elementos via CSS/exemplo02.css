@@ -1,0 +1,15 @@
+div {
+    height: 100px;
+    width: 100px;
+}
+
+#div1 {
+    background-color: blue;
+}
+
+#div2 {
+    background-color: yellow;
+    position: relative;
+    top: 300px;
+    right: 20px;
+}

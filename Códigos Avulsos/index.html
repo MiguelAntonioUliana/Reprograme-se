@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentágono giratório</title>
+</head>
+
+<body>
+    <h1>Pentágono giratório</h1>
+    <hr>
+    <svg width="200" height="200">
+        <polygon points="21,74, 47,153, 130,152, 156,74, 88,24" stroke="blue" stroke-width="6" fill="orange" id="r1" />
+
+        <animate xlink:href="#r1" attributeName="points" from="21,74, 47,153, 130,152, 156,74, 88,24"
+            to="47,153, 130,152, 156,74, 88,24, 21,74" dur="2" begin="0s" repeatCount="indefinite" />
+    </svg>
+
+</body>
+
+</html>

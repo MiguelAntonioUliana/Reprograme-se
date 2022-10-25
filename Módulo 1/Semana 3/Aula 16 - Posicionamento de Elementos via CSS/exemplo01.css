@@ -1,0 +1,8 @@
+#div1 {
+    position: static;
+    height: 100px;
+    width: 100px;
+    left: 200px;
+    top: 400px;
+    background-color: blue;
+}

@@ -1,0 +1,17 @@
+div, span {
+    border: solid 1px black;
+}
+
+div {
+    display: inline;
+}
+
+span:first-of-type {
+    display: block;
+}
+
+
+
+/*block ----> Inicia em uma nova linha e assume todo o espaço disponivel 
+none -----> Não é renderizado
+*/

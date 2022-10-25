@@ -1,0 +1,47 @@
+body {
+    height: 800px;
+}
+
+div.gray {
+    background-color: gray;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 200px;
+    left: 150px;
+}
+
+div.yellow {
+    position: absolute;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+div.red {
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    bottom: 0px;
+    left: 0px;
+}
+
+div.blue {
+    position: absolute;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    left: 150px;
+    top: 150px;
+}
+
+div.green {
+    position: sticky;
+    background-color: green;
+    width: 800px;
+    height: 100px;
+    bottom: 0vh;
+    top: 100vh;
+}
+

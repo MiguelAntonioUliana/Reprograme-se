@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    /*Considera o padding e a borda*/
+}
+
+img {
+    float: left;
+    width: 16.66%;
+    border: solid 10px white;
+    border-radius: 20px;
+}

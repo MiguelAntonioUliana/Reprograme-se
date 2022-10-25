@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    /*background-color: hsl(0, 7%, 28%);
+    background-image: url(bg.png);
+    background-repeat: repeat;
+    background-position: right top;
+    background-attachment: fixed;*/
+    /*Padrão é scroll*/
+    background: gray url(bg.png) repeat fixed;
+    background-size: 1080px;
+    /* cor url(arquivo) repetição attachment*/
+}
+
+#p1 {
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+    height: 250px;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 3px;
+    outline-offset: 3px;
+
+    outline: 3px solid black;
+}
+
+p {
+    background-color: rgba(0, 0, 255, 0.2);
+    color: white;
+    border-style: solid dotted solid dotted;
+    /*
+    dotted = Pontinhado
+    solid= Borda sólida
+    double = Borda dupla
+    groove = Aspecto 3D
+    */
+    border-color: black;
+    border-width: 3px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    text-align: justify;
+}

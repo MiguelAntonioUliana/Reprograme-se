@@ -1,0 +1,42 @@
+#gray {
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
+
+#yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+}
+
+#blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+#red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#green {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(39, 255, 57);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}

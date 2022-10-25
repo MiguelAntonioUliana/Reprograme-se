@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    display: inline-block;
+    margin: 20px 40vw;
+    width: 20vw;
+    opacity: 0.3;
+    transition-duration: 0.5s;
+}
+
+img:hover {
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
