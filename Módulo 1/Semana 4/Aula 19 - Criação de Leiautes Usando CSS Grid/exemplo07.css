@@ -1,0 +1,35 @@
+body {
+    margin: 10px;
+}
+
+main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Mantém as proporções originais da imagem, partes ficam cortadas*/
+}
+
+main {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-flow: dense;
+}
+
+.horz {
+    grid-column: span 2;
+}
+
+.vert {
+    grid-row: span 2;
+}
+
+.quad {
+    grid-column: span 2;
+    grid-row: span 2;
+}

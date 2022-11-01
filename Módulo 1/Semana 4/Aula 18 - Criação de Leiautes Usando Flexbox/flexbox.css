@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Conteiner flexbox contem itens flexbox*/
+
+main {
+    background-color: antiquewhite;
+    display: flex;
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    flex-flow: row nowrap;
+    height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+}
+
+/*
+Possíbilidade no eixo principal - justify-content
+
+flex-Start: A esquerda
+flex-End: A direita
+center: Centro
+space-around: Distância igual a partir do primeiro elemento
+space-evenly: Distância igual em todos os lados
+space-between: A sobra de espaço está entre os elementos/Os elementos da extremidade ficam colados no conteiner
+*/
+
+/*
+Posibilidades no eixo cruzado - aling-items
+
+center: Centralizar verticalmente
+flex-End: Alinhado na base 
+flex-start: Alinhado no topo
+stretch: O conteúdo ocupa a altura da linha toda
+*/
+
+
+div {
+   /*height: 120px;*/
+   width: 30%;
+   border: dotted 2px black;
+   font-size: 60px;
+   text-align: center;
+   line-height: 120px; 
+}
+
+/*
+#div1, #div3, #div7 {
+    height: 150px;
+}
+*/
+
+
+/*
+#div1 { order: 3; }
+
+#div2 { order: 5; }
+
+#div3 { order: 2; }
+
+#div4 { order: 1; }
+
+#div5 { order: 7; }
+
+#div6 { order: 4; }
+
+#div7 { order: 6; }
+*/
+
+/*
+div {
+    flex-grow: 1;
+}
+*/
+
+#div3 {
+    /*flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 200px;*/
+    flex: 0 0 200px;
+    align-self: flex-start;
+}
+
+/*
+#div5 {
+    flex-grow: 0.5;
+} 
+*/
