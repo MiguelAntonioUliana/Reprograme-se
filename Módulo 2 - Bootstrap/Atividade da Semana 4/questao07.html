@@ -20,23 +20,50 @@
         </p>
         <ul class="lead">
             <li>
-                A primeira deve ser um Toast com o título "Informação" precedido por um ícone qualquer do Bootstrap Icons, e com o texto "Esta é uma notificação criada pelo componente Toast do Bootstrap 5.";
+                A primeira deve ser um Toast com o título "Informação" precedido por um ícone qualquer do Bootstrap
+                Icons, e com o texto "Esta é uma notificação criada pelo componente Toast do Bootstrap 5.";
             </li>
             <li>
-                A segunda deve ser um Tooltip adicionado a um botão intitulado "Posicione o Mouse Aqui". O Tooltip deve conter o texto "Esta é uma dica flutuante criada pelo componente Tooltip do Bootstrap 5." e deve aparecer à direita;
+                A segunda deve ser um Tooltip adicionado a um botão intitulado "Posicione o Mouse Aqui". O Tooltip deve
+                conter o texto "Esta é uma dica flutuante criada pelo componente Tooltip do Bootstrap 5." e deve
+                aparecer à direita;
             </li>
             <li>
-                A terceira mensagem deve ser um Popover adicionado a um botão intitulado "Clique Aqui". O Popover deve conter o texto "Esta é outra dica flutuante criada pelo componente Popover do Bootstrap 5.", o título "Informação" e deve aparecer à direita.
+                A terceira mensagem deve ser um Popover adicionado a um botão intitulado "Clique Aqui". O Popover deve
+                conter o texto "Esta é outra dica flutuante criada pelo componente Popover do Bootstrap 5.", o título
+                "Informação" e deve aparecer à direita.
             </li>
         </ul>
         <p class="lead">
-            * Ao fim do código, há uma tag <i>script</i> contendo o código Javascript para inicilialização dos componentes de mensagens. Não apague esse código, pois o funcionamento das mensagens flutuantes depende dele.
+            * Ao fim do código, há uma tag <i>script</i> contendo o código Javascript para inicilialização dos
+            componentes de mensagens. Não apague esse código, pois o funcionamento das mensagens flutuantes depende
+            dele.
         </p>
         <hr>
     </div>
     <!-- FAZER AQUI -->
     <div class="container">
+        <div class="toast mb-3">
+            <div class="toast-header">
+                <i class="bi-info-circle me-1"></i>
+                <strong class="me-auto">Informação</strong>
+                <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Essa é uma notificação criada pelo componente Toast do Bootstrap 5.
+            </div>
+        </div>
 
+        <button class="btn btn-primary" id="btnToast" data-bs-toggle="tooltip"
+            data-bs-title="Esta é uma dica flutuante criada pelo componente Tooltip do Bootstrap 5."
+            data-bs-placement="right">Posicione o Mouse
+            Aqui</button>
+
+        <hr>
+
+        <button class="btn btn-primary mb-5" id="btnToast" data-bs-toggle="popover" data-bs-title="Informação"
+            data-bs-content="Esta é outra dica flutuante criada pelo componente Popover do Bootstrap 5.">Clique
+            Aqui</button>
     </div>
 
     <script>
