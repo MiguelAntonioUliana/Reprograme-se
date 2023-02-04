@@ -4,7 +4,6 @@
 
 // Escrever no conteúdo da página o valor da soma
 
-
 var precos = document.getElementsByClassName("produto_preco");
 
 var soma = 0;
